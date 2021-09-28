@@ -1,7 +1,7 @@
 <?php
 include "Bot.php";
 $bot = new Bot;
-$questions = [
+$questions = [ 
     //que es covid
     "que es covid?" => "La enfermedad por coronavirus (COVID 19) es una ‎enfermedad infecciosa causada por un ‎coronavirus recientemente descubierto.",
     "coronavirus?" => "Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos.",
