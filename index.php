@@ -17,7 +17,7 @@
                     </div>
                     
                         <div class="body" id="chatbody">
-                        <p class="alicia">Hola! soy Alicia, Estoy para responder tus preguntas</p>
+                        <p class="alicia">Hola! soy Mariana, Estoy para responder tus preguntas</p>
                             <div class="scroller"></div>
                         </div>
 
