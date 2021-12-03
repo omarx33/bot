@@ -3,9 +3,8 @@ include "Bot.php";
 $bot = new Bot;
 $questions = [ 
     //que es covid
-    "que es covid?" => "La enfermedad por coronavirus (COVID 19) es una ‎enfermedad infecciosa causada por un ‎coronavirus recientemente descubierto.",
-    "coronavirus?" => "Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos.",
-    "covid 19?" => "La enfermedad del coronavirus 2019 (COVID-19) es una enfermedad respiratoria que puede transmitirse de persona a persona.",
+    "calzado" => "adidas, tigre, vans",
+    
     //sintomas
     "sintomas por la enfermedad?" =>"Sintomas graves causador por covid son dificultad para respirar o sensación de falta de aire, Dolor o presión en el pecho, Incapacidad para hablar o moverse.",
     "sintomas por covid?" =>"Sintomas comunes causados por covid Fiebre, Tos seca y Cansancio." ,
@@ -106,7 +105,7 @@ if (isset($_GET['msg'])) {
         if ($msg == 'hi' || $msg == "hello") {
             $botty->reply('Hola');
         } elseif ($botty->ask($msg, $questions) == "") {
-            $botty->reply("Lo siento, Las preguntas deben estar relacionadas con coronavirus.");
+            $botty->reply("Lo siento, no entendi la pregunta.");
         } else {
             $botty->reply($botty->ask($msg,$questions));
         }
